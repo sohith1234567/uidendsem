@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+ <title>TechNova 2026 - Feedback</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+ <h1>TechNova 2026</h1>
+ <nav>
+ <a href="INDEX.html">Home</a>
+ <a href="event.html">Events</a>
+ <a href="feedback.html">Feedback</a>
+ </nav>
+ </header>
+ <section class="container">
+ <h2>Feedback Form</h2>
+ <form id="feedbackForm" class="form-box">
+ <label>Student Name:</label>
+ <input type="text" id="fbName">
+ <label>Register Number:</label>
+ <input type="text" id="fbReg">
+ <small class="error" id="fbRegError"></small>
+ <label>Event Attended:</label>
+ <select id="fbEvent">
+ <option value="">-- Select Event --</option>
+ <option>Coding Contest</option>
+ <option>Project Expo</option>
+ <option>Hackathon</option>
+ <option>Tech Quiz</option>
+ <option>Workshop</option>
+ </select>
+ <small class="error" id="fbEventError"></small>
+ <label>Rating (1 to 5):</label>
+ <select id="fbRating">
+ <option value="">-- Select Rating --</option>
+ <option>1</option>
+ <option>2</option>
+ <option>3</option>
+ <option>4</option>
+ <option>5</option>
+ </select>
+ <small class="error" id="fbRatingError"></small>
+ <label>Comments:</label>
+ <textarea id="fbComments" minlength="20"></textarea>
+ <small class="error" id="fbCommentsError"></small>
+ <button type="submit">Submit Feedback</button>
+ <p id="fbSuccess" class="success"></p>
+ </form>
+ <h2>Feedback Summary</h2>
+ <p><b>Average Rating:</b> <span
+id="avgRating">0</span></p>
+ <div id="feedbackList"></div>
+ </section>
+ <footer>
+ <p>© 2026 TechNova | Feedback Page</p>
+ </footer>
+ <script src="script.js"></script>
+</body>
+</html>
